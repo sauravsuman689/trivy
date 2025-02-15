@@ -42,7 +42,7 @@ pipeline {
             }
             steps {
                 echo "No critical vulnerabilities found, proceeding with deployment."
-                sh 'docker run -dit -p 8000:8000 localhost:5010/myimage'
+                sh 'docker run -dit -p 8000:8000 localhost:5000/myimage'
                 // Add deployment steps here
             }
         }
